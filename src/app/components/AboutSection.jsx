@@ -10,6 +10,21 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Node.js</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Next.js</li>
+        <li>React Native</li>
+        <li>Flutter</li>
+        <li>Tailwind CSS</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>C++</li>
+        <li>Python</li>
+        <li>JAVA</li>
+        <li>SQL</li>
+        <li>Firebase</li>
+        <li>Micropython</li>
+        <li>Arduino</li>
       </ul>
     ),
   },
@@ -19,7 +34,9 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Google</li>
+        <li>Google </li>
+        <li>PCBWay</li>
+        <li>IIT Delhi</li>
       </ul>
     ),
   },
@@ -29,6 +46,9 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Arduino</li>
+        <li>Raspberry pi</li>
+        <li>ESP32</li>
+        <li>PCB Designing</li>
       </ul>
     ),
   },
@@ -40,6 +60,10 @@ const TAB_DATA = [
         <li>
           Listed as Project of the week and rewarded a Raspberry Pi by PCBWay
         </li>
+        <li>Fourth prize in Interschool Hackathon</li>
+        <li>From Google code to finish in top 10</li>
+        <li>From HPE to finish in top 100</li>
+        <li>Fourth prize in All India Hackathon at IIT Dehi</li>
       </ul>
     ),
   },
