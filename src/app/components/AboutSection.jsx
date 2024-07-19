@@ -57,16 +57,16 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div>
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image
           src="/images/about-image.jpg"
           width={500}
           height={500}
           alt="My Original Art"
         />
-        <div>
-          <h2>About Me</h2>
-          <p>
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <p className="text-base lg:text-lg">
             I am a full stack developer with a passion for creating interactive
             and responsive applications and interesting Hardware tech. I have
             experience working with several Languages, even particiated in
@@ -75,7 +75,7 @@ const AboutSection = () => {
             set. I am a team player and I am excited to work with others to
             create amazing applications.I also like Sketching,Playing Games.
           </p>
-          <div>
+          <div className="flex flex-row justify-start mt-8 overflow-x-auto">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
