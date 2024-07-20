@@ -4,7 +4,75 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-const projectsData = [];
+const projectsData = [
+  {
+    id: 1,
+    title: "Ecommerce",
+    description: " Webapp",
+    image: "/images/projects/n.png",
+    tag: ["All", "Programming"],
+    gitUrl: "",
+    previewUrl: "",
+  },
+  {
+    id: 2,
+    title: "Website-Builder",
+    description: "Website builder made using openai api",
+    image: "/images/projects/python.png",
+    tag: ["All", "Programming"],
+    gitUrl: "",
+    previewUrl: "",
+  },
+  {
+    id: 3,
+    title: "Website-Translator-with-GoogleTranslate",
+    description:
+      "Uses older version of google translate without any api and without showing the banner. You can change the language by editing translate.js.",
+    image: "/images/projects/trans.png",
+    tag: ["All", "Programming"],
+    gitUrl: "",
+    previewUrl: "",
+  },
+  {
+    id: 4,
+    title: "Portfolio Website",
+    description: "This website is made using Next.js and Tailwind CSS.",
+    image: "/images/projects/port.png",
+    tag: ["All", "Programming"],
+    gitUrl: "",
+    previewUrl: "",
+  },
+  {
+    id: 5,
+    title: "Morse Code Keyer with raspberry pi",
+    description:
+      "Morse code keyer with raspberry pi pico which can be used to send morse code over internet.",
+    image: "/images/projects/morse.jpg",
+    tag: ["All", "Hardware"],
+    gitUrl: "",
+    previewUrl: "/",
+  },
+  {
+    id: 6,
+    title: "Weather Station with raspberry pi",
+    description:
+      "Weather Station with raspberry pi and sensors which can be accessed from anywhere.",
+    image: "/images/projects/weather.jpg",
+    tag: ["All", "Hardware"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 7,
+    title: "Controll over wifi car with raspberry pi",
+    description:
+      "Remote controll  car made with raspberry pi which can be controlled from phone.",
+    image: "/images/projects/car.jpg",
+    tag: ["All", "Hardware"],
+    gitUrl: "",
+    previewUrl: "/",
+  },
+];
 
 const ProjectsSection = () => {
   const [tag, setTag] = useState("All");
@@ -26,8 +94,10 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2>My Projects</h2>
-      <div>
+      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+        My Projects
+      </h2>
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
